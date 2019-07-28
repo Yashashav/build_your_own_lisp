@@ -7,7 +7,19 @@
 */
 
 /*
+    MPC_PARSER_T is struct type which is right now not known to me but I am using it to declare the "type"
+    for a parser
     
+    MPC_OR is used to create a parser 
+
+    MPC_SYM is to wrap a string 
+
+    MPC_AND is similar to -> 'a' 'b'	First 'a' is required, then 'b' is required.
+    i.e for the creation of "Phrase" we require a pre-modifier i.e an "Adjective" followed by a "Noun"
+
+    MPC_MANY is similar to -> 'a'*	Zero or more 'a' are required.
+    i.e for the "Doge" language which we have specified, a "Phrase" or zero "Phrase" is required
+
 */
 
 mpc_parser_t* Adjective = mpc_or(4,
