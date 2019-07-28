@@ -1,0 +1,16 @@
+› Write down some more examples of strings the Doge language contains.
+    Noun -> "much"
+› Why are there back slashes \ in front of the quote marks " in the grammar?
+    Need to try harder to google. Couldn't find a thing
+› Why are there back slashes \ at the end of the line in the grammar?
+    In long strings, we can write it separate the strings aesthetically line by line
+› Describe textually a grammar for decimal numbers such as 0.01 or 52.221.
+    "                                       
+        number : \"%d\";                    \
+        dot    : \".\";                     \
+        decimal: <number><dot><number>;     \
+    "
+› Describe textually a grammar for web URLs such as http://www.buildyourownlisp.com.
+› Describe textually a grammar for simple English sentences such as the cat sat on the mat.
+› Describe more formally the above grammars. Use |, *, or any symbols of your own invention.
+› If you are familiar with JSON, textually describe a grammar for it.
