@@ -11,6 +11,27 @@
         decimal: <number><dot><number>;     \
     "
 › Describe textually a grammar for web URLs such as http://www.buildyourownlisp.com.
+    "
+        protocol         : \"http\" | \"https\";                                   /
+        sub-domain       : \"www\";                                                /
+        domain           : \"%s\";                                                 /
+        top-level-domain : \"com\" | \"org\" | \"net\" | \"gov\" | "\info"\;       /
+        url              : <protocol>://<sub-domain>.<domain>.<top-level-domain>;  /
+        
+    "
 › Describe textually a grammar for simple English sentences such as the cat sat on the mat.
+    "
+
+        verb        : "\sat"\;                                                      /
+        noun        : \"cat\" | \"mat\";                                            /
+        determinant : \"the\" | \"an\" | "\a"\;                                     /
+        preposition : \"on\"  | \"into\" | "\onto"\;                                /
+        subject     : <determinant> <noun> | <noun>;                                /
+        sentence    : <subject> <verb> |                                            /
+                      <subject> <verb> <preposition> <noun>;                        /
+
+    "
 › Describe more formally the above grammars. Use |, *, or any symbols of your own invention.
+    used "|" and "*" above
 › If you are familiar with JSON, textually describe a grammar for it.
+    not familiar :/ but will learn it soon
